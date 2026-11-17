@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="中钞信达反假货币测评考试题库关键词导航">
+  <title>反假题库导航 · 中钞信达</title>
+  <style>
+    :root {
+      --paper: oklch(0.965 0.014 105);
+      --surface: oklch(0.995 0.004 105);
+      --surface-soft: oklch(0.945 0.018 150);
+      --ink: oklch(0.23 0.025 170);
+      --ink-soft: oklch(0.48 0.024 170);
+      --line: oklch(0.87 0.018 150);
+      --line-strong: oklch(0.76 0.028 150);
+      --accent: oklch(0.46 0.12 165);
+      --accent-deep: oklch(0.34 0.09 165);
+      --accent-soft: oklch(0.9 0.055 165);
+      --warm: oklch(0.56 0.12 45);
+      --warm-soft: oklch(0.92 0.055 75);
+      --danger: oklch(0.5 0.13 25);
+      --shadow: 0 14px 35px oklch(0.25 0.025 165 / 0.07);
+      --radius: 8px;
+      color-scheme: light;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+      background: var(--paper);
+      color: var(--ink);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; min-width: 320px; background: var(--paper); }
+    button, input { font: inherit; }
+    button { color: inherit; }
+    button:focus-visible, input:focus-visible { outline: 3px solid oklch(0.72 0.14 165 / 0.55); outline-offset: 2px; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+
+    .app-header {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      min-height: 78px;
+      padding: 15px 30px;
+      background: oklch(0.965 0.014 105 / 0.94);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(14px);
+    }
+    .brand { display: flex; align-items: center; gap: 12px; min-width: 218px; }
+    .brand-mark {
+      display: grid;
+      place-items: center;
+      width: 36px;
+      height: 36px;
+      border: 1px solid var(--accent);
+      border-radius: 10px 4px 10px 4px;
+      background: var(--accent);
+      color: var(--surface);
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: -0.04em;
+    }
+    .brand-title { margin: 0; font-size: 16px; font-weight: 760; letter-spacing: 0.01em; }
+    .brand-subtitle { margin: 3px 0 0; color: var(--ink-soft); font-size: 11px; }
+    .search-wrap { position: relative; flex: 1; max-width: 700px; }
+    .search-wrap::before { content: "⌕"; position: absolute; left: 14px; top: 50%; transform: translateY(-54%); color: var(--ink-soft); font-size: 22px; line-height: 1; }
+    #search-input {
+      width: 100%;
+      min-height: 44px;
+      padding: 0 74px 0 43px;
+      border: 1px solid var(--line-strong);
+      border-radius: var(--radius);
+      background: var(--surface);
+      color: var(--ink);
+      box-shadow: 0 2px 0 oklch(0.25 0.02 160 / 0.02);
+    }
+    #search-input::placeholder { color: oklch(0.55 0.018 170); }
+    .search-key { position: absolute; right: 13px; top: 50%; transform: translateY(-50%); padding: 2px 6px; border: 1px solid var(--line); border-radius: 4px; color: var(--ink-soft); font-size: 11px; }
+    .header-actions { display: flex; align-items: center; gap: 8px; margin-left: auto; }
+    .icon-button, .text-button {
+      min-height: 38px;
+      border: 1px solid var(--line-strong);
+      border-radius: var(--radius);
+      background: var(--surface);
+      cursor: pointer;
+      transition: border-color 160ms ease, background 160ms ease, color 160ms ease, transform 160ms ease;
+    }
+    .icon-button { width: 38px; padding: 0; font-size: 19px; }
+    .text-button { padding: 0 12px; font-size: 13px; }
+    .icon-button:hover, .text-button:hover { border-color: var(--accent); color: var(--accent-deep); background: var(--accent-soft); }
+    .icon-button:active, .text-button:active { transform: translateY(1px); }
+    .mobile-menu { display: none; }
+
+    .app-layout { display: grid; grid-template-columns: 272px minmax(0, 1fr); max-width: 1500px; margin: 0 auto; }
+    .sidebar { min-height: calc(100vh - 78px); padding: 28px 20px 40px 30px; border-right: 1px solid var(--line); }
+    .sidebar-section + .sidebar-section { margin-top: 28px; }
+    .sidebar-heading { display: flex; align-items: center; justify-content: space-between; margin: 0 0 10px; color: var(--ink-soft); font-size: 11px; font-weight: 760; letter-spacing: 0.1em; text-transform: uppercase; }
+    .sidebar-heading span:last-child { color: var(--ink-soft); font-size: 11px; letter-spacing: 0; }
+    .chapter-list { display: grid; gap: 3px; }
+    .chapter-button {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 8px;
+      width: 100%;
+      padding: 9px 10px;
+      border: 1px solid transparent;
+      border-radius: 6px;
+      background: transparent;
+      color: var(--ink-soft);
+      text-align: left;
+      cursor: pointer;
+      transition: background 160ms ease, color 160ms ease, border-color 160ms ease;
+    }
+    .chapter-button span:first-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .chapter-button span:last-child { flex: 0 0 auto; font-size: 11px; color: oklch(0.58 0.015 170); }
+    .chapter-button:hover { background: var(--surface); color: var(--ink); }
+    .chapter-button.active { border-color: oklch(0.75 0.06 165); background: var(--accent-soft); color: var(--accent-deep); font-weight: 700; }
+    .chapter-button.active span:last-child { color: var(--accent-deep); }
+    .type-list { display: grid; gap: 4px; }
+    .type-button { display: flex; align-items: center; justify-content: space-between; width: 100%; padding: 8px 10px; border: 1px solid transparent; border-radius: 6px; background: transparent; color: var(--ink-soft); text-align: left; cursor: pointer; }
+    .type-button:hover { background: var(--surface); color: var(--ink); }
+    .type-button.active { border-color: oklch(0.75 0.06 165); background: var(--accent-soft); color: var(--accent-deep); font-weight: 700; }
+    .type-count { font-size: 11px; color: oklch(0.58 0.015 170); }
+    .sidebar-note { margin: 32px 8px 0 0; padding-top: 16px; border-top: 1px solid var(--line); color: var(--ink-soft); font-size: 12px; line-height: 1.7; }
+
+    .content { min-width: 0; padding: 27px 34px 60px; }
+    .content-toolbar { display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; margin-bottom: 22px; }
+    .eyebrow { margin: 0 0 7px; color: var(--accent); font-size: 11px; font-weight: 800; letter-spacing: 0.13em; text-transform: uppercase; }
+    h1 { margin: 0; font-size: 25px; line-height: 1.2; letter-spacing: -0.02em; }
+    .result-summary { margin: 8px 0 0; color: var(--ink-soft); font-size: 13px; }
+    .result-summary strong { color: var(--ink); font-weight: 780; }
+    .toolbar-actions { display: flex; align-items: center; gap: 9px; }
+    .answer-toggle { display: inline-flex; align-items: center; gap: 8px; min-height: 38px; padding: 0 11px; border: 1px solid var(--line-strong); border-radius: var(--radius); background: var(--surface); color: var(--ink-soft); font-size: 13px; cursor: pointer; }
+    .answer-toggle input { accent-color: var(--accent); }
+    .filter-strip { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; min-height: 30px; margin-bottom: 17px; }
+    .filter-label { color: var(--ink-soft); font-size: 12px; }
+    .filter-chip { display: inline-flex; align-items: center; gap: 5px; padding: 5px 9px; border: 1px solid oklch(0.77 0.06 165); border-radius: 99px; background: var(--accent-soft); color: var(--accent-deep); font-size: 12px; }
+    .filter-chip button { border: 0; background: transparent; color: inherit; cursor: pointer; font-size: 14px; line-height: 1; }
+    .empty-filter { color: var(--ink-soft); font-size: 12px; }
+
+    .question-list { border-top: 1px solid var(--line-strong); }
+    .question-item { position: relative; padding: 20px 8px 22px 0; border-bottom: 1px solid var(--line); scroll-margin-top: 100px; }
+    .question-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding-right: 42px; color: var(--ink-soft); font-size: 12px; }
+    .question-id { color: var(--accent-deep); font-weight: 800; font-variant-numeric: tabular-nums; }
+    .badge { display: inline-flex; align-items: center; min-height: 21px; padding: 2px 7px; border-radius: 4px; background: var(--surface-soft); color: var(--ink-soft); font-size: 11px; }
+    .badge.type-case { background: var(--warm-soft); color: oklch(0.4 0.08 50); }
+    .meta-sep { color: var(--line-strong); }
+    .question-actions { position: absolute; top: 18px; right: 0; display: flex; gap: 5px; }
+    .question-action { width: 30px; height: 30px; border: 1px solid transparent; border-radius: 6px; background: transparent; color: var(--ink-soft); cursor: pointer; font-size: 17px; }
+    .question-action:hover { border-color: var(--line-strong); background: var(--surface); color: var(--accent-deep); }
+    .question-action.favorited { color: var(--warm); }
+    .question-text { max-width: 88ch; margin: 12px 0 14px; font-size: 16px; line-height: 1.75; font-weight: 600; }
+    mark { padding: 0 2px; border-radius: 2px; background: oklch(0.86 0.08 83); color: inherit; }
+    .option-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px 22px; max-width: 1000px; }
+    .option { display: grid; grid-template-columns: 24px minmax(0, 1fr); gap: 7px; align-items: start; padding: 8px 10px; border: 1px solid transparent; border-radius: 5px; color: var(--ink-soft); font-size: 14px; line-height: 1.55; }
+    .option-key { color: var(--ink); font-weight: 780; }
+    .option.correct { border-color: oklch(0.75 0.075 165); background: oklch(0.93 0.035 165); color: var(--ink); }
+    .option.correct .option-key { color: var(--accent-deep); }
+    .answer-row { display: flex; align-items: baseline; flex-wrap: wrap; gap: 7px; margin-top: 13px; color: var(--ink-soft); font-size: 13px; }
+    .answer-label { color: var(--accent-deep); font-weight: 800; }
+    .answer-value { padding: 3px 8px; border-radius: 4px; background: var(--accent-soft); color: var(--accent-deep); font-weight: 800; letter-spacing: 0.08em; }
+    .answer-value.boolean { background: var(--warm-soft); color: oklch(0.4 0.08 50); letter-spacing: 0; }
+    .answer-hidden { color: var(--ink-soft); font-style: italic; }
+    .note { margin: 10px 0 0; color: var(--ink-soft); font-size: 12px; line-height: 1.6; }
+    .load-more { display: flex; justify-content: center; padding: 26px 0; }
+    .load-more button { min-height: 40px; padding: 0 18px; border: 1px solid var(--line-strong); border-radius: var(--radius); background: var(--surface); cursor: pointer; }
+    .load-more button:hover { border-color: var(--accent); background: var(--accent-soft); color: var(--accent-deep); }
+    .empty-state { padding: 70px 20px; border-bottom: 1px solid var(--line); text-align: center; }
+    .empty-state-symbol { display: block; margin-bottom: 12px; color: var(--accent); font-size: 34px; }
+    .empty-state h2 { margin: 0; font-size: 18px; }
+    .empty-state p { margin: 9px auto 18px; max-width: 48ch; color: var(--ink-soft); font-size: 13px; line-height: 1.7; }
+
+    .toast { position: fixed; right: 22px; bottom: 22px; z-index: 40; max-width: min(360px, calc(100vw - 44px)); padding: 11px 14px; border: 1px solid var(--line-strong); border-radius: var(--radius); background: var(--ink); color: var(--surface); box-shadow: var(--shadow); font-size: 13px; opacity: 0; transform: translateY(10px); pointer-events: none; transition: opacity 180ms ease, transform 180ms ease; }
+    .toast.show { opacity: 1; transform: translateY(0); }
+
+    @media (max-width: 900px) {
+      .app-header { gap: 12px; padding: 12px 18px; }
+      .brand { min-width: 0; }
+      .brand-subtitle { display: none; }
+      .search-wrap { max-width: none; }
+      .header-actions .text-button { display: none; }
+      .mobile-menu { display: block; }
+      .app-layout { display: block; }
+      .sidebar { position: fixed; inset: 78px auto 0 0; z-index: 15; width: min(310px, 88vw); padding: 24px 20px; background: var(--paper); box-shadow: 12px 0 30px oklch(0.25 0.025 165 / 0.08); transform: translateX(-102%); transition: transform 180ms ease; overflow-y: auto; }
+      .sidebar.open { transform: translateX(0); }
+      .content { padding: 24px 20px 50px; }
+    }
+    @media (max-width: 620px) {
+      .app-header { min-height: 70px; padding: 10px 12px; }
+      .brand-mark { width: 32px; height: 32px; font-size: 16px; }
+      .brand-title { font-size: 14px; }
+      .search-wrap::before { left: 10px; }
+      #search-input { min-height: 40px; padding-left: 35px; padding-right: 15px; font-size: 13px; }
+      .search-key { display: none; }
+      .mobile-menu { width: 34px; height: 34px; min-height: 34px; }
+      .sidebar { inset: 70px auto 0 0; }
+      .content { padding: 21px 14px 46px; }
+      .content-toolbar { align-items: flex-start; flex-direction: column; gap: 14px; margin-bottom: 17px; }
+      h1 { font-size: 22px; }
+      .toolbar-actions { width: 100%; justify-content: space-between; }
+      .question-item { padding: 17px 0 19px; }
+      .question-text { margin-top: 10px; font-size: 15px; line-height: 1.7; }
+      .option-grid { grid-template-columns: 1fr; gap: 3px; }
+      .option { padding: 7px 8px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <header class="app-header">
+    <button class="icon-button mobile-menu" id="mobile-menu" aria-label="打开筛选菜单" title="筛选菜单">☰</button>
+    <div class="brand" aria-label="反假题库导航">
+      <div class="brand-mark" aria-hidden="true">钞</div>
+      <div>
+        <p class="brand-title">反假题库导航</p>
+        <p class="brand-subtitle">中钞信达 · 2026 年下半年</p>
+      </div>
+    </div>
+    <div class="search-wrap">
+      <label class="sr-only" for="search-input">搜索题目、知识点或选项</label>
+      <input id="search-input" type="search" autocomplete="off" placeholder="搜索题干、知识点、选项或答案…">
+      <span class="search-key" aria-hidden="true">/</span>
+    </div>
+    <div class="header-actions">
+      <button class="text-button" id="random-button" type="button">随机一题</button>
+      <button class="icon-button" id="clear-button" type="button" aria-label="清除搜索和筛选" title="清除搜索和筛选">↺</button>
+    </div>
+  </header>
+
+  <div class="app-layout">
+    <aside class="sidebar" id="sidebar" aria-label="题库筛选">
+      <section class="sidebar-section">
+        <h2 class="sidebar-heading"><span>章节</span><span id="chapter-total"></span></h2>
+        <div class="chapter-list" id="chapter-list"></div>
+      </section>
+      <section class="sidebar-section">
+        <h2 class="sidebar-heading"><span>题型</span><span>类型</span></h2>
+        <div class="type-list" id="type-list"></div>
+      </section>
+      <p class="sidebar-note">输入一个关键词即可开始。题目编号、选项和答案均来自原始题库，页面支持复制单题链接。</p>
+    </aside>
+
+    <main class="content">
+      <div class="content-toolbar">
+        <div>
+          <p class="eyebrow">快速导航 / QUESTION INDEX</p>
+          <h1>按关键词定位题目</h1>
+          <p class="result-summary" id="result-summary">正在读取题库…</p>
+        </div>
+        <div class="toolbar-actions">
+          <label class="answer-toggle"><input id="answer-toggle" type="checkbox" checked> 显示答案</label>
+          <button class="icon-button" id="favorites-button" type="button" aria-label="只看收藏题目" title="只看收藏题目">♡</button>
+        </div>
+      </div>
+      <div class="filter-strip" id="filter-strip" aria-live="polite"></div>
+      <section class="question-list" id="question-list" aria-live="polite"></section>
+      <div class="load-more" id="load-more" hidden><button type="button">继续显示</button></div>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="questions.js"></script>
+  <script>
+    (() => {
+      const bank = Array.isArray(window.QUESTION_BANK) ? window.QUESTION_BANK : [];
+      const state = {
+        query: "",
+        chapter: "全部章节",
+        type: "全部题型",
+        showAnswers: localStorage.getItem("anti-fake-show-answers") !== "false",
+        favoritesOnly: false,
+        favorites: new Set(JSON.parse(localStorage.getItem("anti-fake-favorites") || "[]")),
+        visibleCount: 40,
+      };
+      const els = {
+        search: document.querySelector("#search-input"),
+        chapterList: document.querySelector("#chapter-list"),
+        chapterTotal: document.querySelector("#chapter-total"),
+        typeList: document.querySelector("#type-list"),
+        summary: document.querySelector("#result-summary"),
+        filters: document.querySelector("#filter-strip"),
+        list: document.querySelector("#question-list"),
+        loadMore: document.querySelector("#load-more"),
+        answerToggle: document.querySelector("#answer-toggle"),
+        favoritesButton: document.querySelector("#favorites-button"),
+        sidebar: document.querySelector("#sidebar"),
+        toast: document.querySelector("#toast"),
+      };
+      let toastTimer;
+
+      const chapterCounts = countBy("chapter");
+      const typeCounts = countBy("type");
+      const chapters = ["全部章节", ...Object.keys(chapterCounts)];
+      const types = ["全部题型", ...Object.keys(typeCounts)];
+      els.answerToggle.checked = state.showAnswers;
+      els.chapterTotal.textContent = bank.length + " 题";
+
+      function countBy(key) {
+        return bank.reduce((counts, item) => {
+          counts[item[key]] = (counts[item[key]] || 0) + 1;
+          return counts;
+        }, {});
+      }
+
+      function escapeHtml(value) {
+        return String(value ?? "").replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char]));
+      }
+
+      function queryTerms() {
+        return state.query.toLowerCase().trim().split(/\s+/).filter(Boolean);
+      }
+
+      function highlight(value) {
+        const text = escapeHtml(value);
+        const terms = queryTerms().filter((term) => term.length > 0).sort((a, b) => b.length - a.length);
+        if (!terms.length) return text;
+        const safeTerms = terms.map((term) => term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&"));
+        return text.replace(new RegExp("(" + safeTerms.join("|") + ")", "gi"), "<mark>$1</mark>");
+      }
+
+      function filteredQuestions() {
+        const terms = queryTerms();
+        return bank.filter((item) => {
+          if (state.chapter !== "全部章节" && item.chapter !== state.chapter) return false;
+          if (state.type !== "全部题型" && item.type !== state.type) return false;
+          if (state.favoritesOnly && !state.favorites.has(item.id)) return false;
+          if (!terms.length) return true;
+          const haystack = item.searchText.toLowerCase();
+          return terms.every((term) => haystack.includes(term));
+        });
+      }
+
+      function renderNavigation() {
+        els.chapterList.innerHTML = chapters.map((chapter) => {
+          const count = chapter === "全部章节" ? bank.length : chapterCounts[chapter];
+          return `<button class="chapter-button ${state.chapter === chapter ? "active" : ""}" data-chapter="${escapeHtml(chapter)}"><span>${escapeHtml(chapter)}</span><span>${count}</span></button>`;
+        }).join("");
+        els.typeList.innerHTML = types.map((type) => {
+          const count = type === "全部题型" ? bank.length : typeCounts[type];
+          return `<button class="type-button ${state.type === type ? "active" : ""}" data-type="${escapeHtml(type)}"><span>${escapeHtml(type)}</span><span class="type-count">${count}</span></button>`;
+        }).join("");
+      }
+
+      function renderFilters() {
+        const chips = [];
+        if (state.chapter !== "全部章节") chips.push(`<span class="filter-chip">${escapeHtml(state.chapter)} <button data-remove="chapter" aria-label="移除章节筛选">×</button></span>`);
+        if (state.type !== "全部题型") chips.push(`<span class="filter-chip">${escapeHtml(state.type)} <button data-remove="type" aria-label="移除题型筛选">×</button></span>`);
+        if (state.favoritesOnly) chips.push(`<span class="filter-chip">我的收藏 <button data-remove="favorites" aria-label="移除收藏筛选">×</button></span>`);
+        els.filters.innerHTML = chips.length ? `<span class="filter-label">当前筛选</span>${chips.join("")}` : `<span class="empty-filter">可按章节、题型或关键词组合筛选</span>`;
+      }
+
+      function renderQuestions() {
+        const results = filteredQuestions();
+        const visible = results.slice(0, state.visibleCount);
+        const queryLabel = state.query ? `，关键词“${escapeHtml(state.query)}”` : "";
+        els.summary.innerHTML = `共 <strong>${results.length}</strong> 道题${queryLabel}`;
+        if (!results.length) {
+          els.list.innerHTML = `<div class="empty-state"><span class="empty-state-symbol" aria-hidden="true">⌕</span><h2>没有找到匹配题目</h2><p>换一个更短的关键词，或移除章节和题型筛选后再试。</p><button class="text-button" data-empty-clear type="button">清除筛选</button></div>`;
+          els.loadMore.hidden = true;
+          return;
+        }
+        els.list.innerHTML = visible.map(renderQuestion).join("");
+        els.loadMore.hidden = visible.length >= results.length;
+        els.loadMore.querySelector("button").textContent = `继续显示（还剩 ${results.length - visible.length} 道）`;
+      }
+
+      function renderQuestion(item) {
+        const answerKeys = item.answerKeys || [];
+        const isBoolean = item.answerText === "正确" || item.answerText === "错误";
+        const options = item.options.map((option) => {
+          const correct = state.showAnswers && answerKeys.includes(option.key);
+          return `<div class="option ${correct ? "correct" : ""}"><span class="option-key">${option.key}</span><span>${highlight(option.text)}</span></div>`;
+        }).join("");
+        const answer = state.showAnswers
+          ? `<span class="answer-value ${isBoolean ? "boolean" : ""}">${escapeHtml(item.answerText || "未标注")}</span>`
+          : `<span class="answer-hidden">答案已隐藏</span>`;
+        const favorited = state.favorites.has(item.id);
+        return `<article class="question-item" id="q-${item.id}" data-id="${item.id}">
+          <div class="question-actions">
+            <button class="question-action ${favorited ? "favorited" : ""}" data-action="favorite" aria-label="${favorited ? "取消收藏" : "收藏题目"}" title="${favorited ? "取消收藏" : "收藏题目"}">${favorited ? "★" : "☆"}</button>
+            <button class="question-action" data-action="copy" aria-label="复制题目链接" title="复制题目链接">↗</button>
+          </div>
+          <div class="question-meta"><span class="question-id">#${item.id}</span><span class="badge ${item.type === "案例题" ? "type-case" : ""}">${escapeHtml(item.type)}</span><span class="meta-sep">/</span><span>${escapeHtml(item.chapter)}</span><span class="meta-sep">/</span><span>${escapeHtml(item.section)}</span><span>第 ${item.number} 题</span></div>
+          <p class="question-text">${highlight(item.question)}</p>
+          ${options ? `<div class="option-grid">${options}</div>` : ""}
+          <div class="answer-row"><span class="answer-label">答案</span>${answer}</div>
+        </article>`;
+      }
+
+      function render() {
+        renderNavigation();
+        renderFilters();
+        renderQuestions();
+        els.favoritesButton.textContent = state.favoritesOnly ? "★" : "♡";
+        els.favoritesButton.setAttribute("aria-label", state.favoritesOnly ? "显示全部题目" : "只看收藏题目");
+        els.favoritesButton.title = state.favoritesOnly ? "显示全部题目" : "只看收藏题目";
+      }
+
+      function showToast(message) {
+        clearTimeout(toastTimer);
+        els.toast.textContent = message;
+        els.toast.classList.add("show");
+        toastTimer = setTimeout(() => els.toast.classList.remove("show"), 2200);
+      }
+
+      function setFavorite(id) {
+        if (state.favorites.has(id)) state.favorites.delete(id); else state.favorites.add(id);
+        localStorage.setItem("anti-fake-favorites", JSON.stringify([...state.favorites]));
+        render();
+      }
+
+      function copyQuestionLink(id) {
+        const url = `${location.href.split("#")[0]}#q-${id}`;
+        const done = () => showToast(`已复制第 ${id} 题链接`);
+        if (navigator.clipboard && window.isSecureContext) navigator.clipboard.writeText(url).then(done).catch(() => showToast("复制失败，请手动复制地址栏链接"));
+        else { window.prompt("复制题目链接", url); }
+      }
+
+      function clearAll() {
+        state.query = "";
+        state.chapter = "全部章节";
+        state.type = "全部题型";
+        state.favoritesOnly = false;
+        state.visibleCount = 40;
+        els.search.value = "";
+        render();
+      }
+
+      els.search.addEventListener("input", () => { state.query = els.search.value; state.visibleCount = 40; render(); });
+      els.answerToggle.addEventListener("change", () => { state.showAnswers = els.answerToggle.checked; localStorage.setItem("anti-fake-show-answers", String(state.showAnswers)); renderQuestions(); });
+      document.querySelector("#clear-button").addEventListener("click", clearAll);
+      document.querySelector("#random-button").addEventListener("click", () => {
+        const results = filteredQuestions();
+        if (!results.length) return showToast("当前筛选下没有可跳转的题目");
+        const item = results[Math.floor(Math.random() * results.length)];
+        if (!results.slice(0, state.visibleCount).some((entry) => entry.id === item.id)) state.visibleCount = Math.max(state.visibleCount, results.indexOf(item) + 1);
+        renderQuestions();
+        requestAnimationFrame(() => document.querySelector(`#q-${item.id}`)?.scrollIntoView({ behavior: "smooth", block: "center" }));
+      });
+      els.favoritesButton.addEventListener("click", () => { state.favoritesOnly = !state.favoritesOnly; state.visibleCount = 40; render(); });
+      els.loadMore.querySelector("button").addEventListener("click", () => { state.visibleCount += 40; renderQuestions(); });
+      els.chapterList.addEventListener("click", (event) => { const button = event.target.closest("[data-chapter]"); if (!button) return; state.chapter = button.dataset.chapter; state.visibleCount = 40; render(); els.sidebar.classList.remove("open"); });
+      els.typeList.addEventListener("click", (event) => { const button = event.target.closest("[data-type]"); if (!button) return; state.type = button.dataset.type; state.visibleCount = 40; render(); els.sidebar.classList.remove("open"); });
+      els.filters.addEventListener("click", (event) => { const button = event.target.closest("[data-remove]"); if (!button) return; if (button.dataset.remove === "chapter") state.chapter = "全部章节"; if (button.dataset.remove === "type") state.type = "全部题型"; if (button.dataset.remove === "favorites") state.favoritesOnly = false; state.visibleCount = 40; render(); });
+      els.list.addEventListener("click", (event) => {
+        if (event.target.closest("[data-empty-clear]")) return clearAll();
+        const action = event.target.closest("[data-action]");
+        if (!action) return;
+        const item = action.closest("[data-id]");
+        const id = Number(item.dataset.id);
+        if (action.dataset.action === "favorite") setFavorite(id);
+        if (action.dataset.action === "copy") copyQuestionLink(id);
+      });
+      document.querySelector("#mobile-menu").addEventListener("click", () => els.sidebar.classList.toggle("open"));
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "/" && document.activeElement !== els.search && !["INPUT", "TEXTAREA", "SELECT"].includes(document.activeElement.tagName)) { event.preventDefault(); els.search.focus(); }
+        if (event.key === "Escape" && document.activeElement === els.search) { els.search.value = ""; state.query = ""; render(); els.search.blur(); }
+      });
+
+      const hashMatch = location.hash.match(/^#q-(\d+)$/);
+      render();
+      if (hashMatch) {
+        const id = Number(hashMatch[1]);
+        const index = bank.findIndex((item) => item.id === id);
+        if (index >= 0) { state.visibleCount = Math.ceil((index + 1) / 40) * 40; renderQuestions(); requestAnimationFrame(() => document.querySelector(`#q-${id}`)?.scrollIntoView({ block: "center" })); }
+      }
+    })();
+  </script>
+</body>
+</html>
